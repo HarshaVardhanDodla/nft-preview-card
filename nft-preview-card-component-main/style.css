@@ -1,0 +1,129 @@
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+img {
+  max-width: 100%;
+}
+p {
+  font-weight: 300;
+}
+body {
+  font-size: 18px;
+  font-family: "outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh-1px);
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+.container {
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+img {
+  border-radius: 0.625rem;
+  margin-bottom: 1rem;
+}
+.container h2:hover,
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.container .main-image {
+  position: relative;
+}
+.container .main-image div {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 20px);
+  top: 0;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.container .main-image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 00.625rem;
+}
+.container .main-image div img {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.container h2 {
+  color: hsl(0, 0%, 100%);
+  margin: 1rem 0.5rem 0.5rem 0;
+}
+span {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+.eth {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.count {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+}
+.count p {
+  padding-left: 0.4rem;
+}
+.day {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+}
+.day p {
+  padding-left: 0.4rem;
+}
+#sentence {
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 1rem;
+}
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+.avatar-part {
+  display: flex;
+  align-items: center;
+}
+.avatar-part p {
+  justify-content: start;
+  color: hsl(215, 51%, 70%);
+}
+
+@media (mid-width: 500px) {
+  .container {
+    width: 450px;
+    margin: 0 auto 1rem;
+  }
+}
